@@ -461,6 +461,11 @@ template {
   flex: 1;
 }
 
+.wrapper-svg-main {
+  transform: scale(1.25);
+  margin-top: 50px;
+}
+
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
