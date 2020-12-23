@@ -1,2 +1,2 @@
 ikona karty
-grafika benneru (izometryczna)
+//grafika benneru (izometryczna)

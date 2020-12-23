@@ -1,0 +1,11 @@
+@import 'normalize';
+@import 'globals';
+
+body {
+    background-color: $bg-main;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
