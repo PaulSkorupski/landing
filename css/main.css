@@ -423,6 +423,38 @@ template {
   text-decoration: underline;
   text-decoration-color: #005eff79;
   color: #005DFF;
+  font-weight: 700;
+}
+
+.wrapper-text-sub {
+  color: #282B2E;
+  font-size: 1.6rem;
+  max-width: 450px;
+}
+
+.button-cont {
+  margin-top: 40px;
+}
+
+.wrapper-more {
+  background-color: #2680EB;
+  text-align: center;
+  padding: 13px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  margin-right: 15px;
+}
+
+.wrapper-contact {
+  background-color: #2680EB;
+  text-align: center;
+  padding: 13px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  background: none;
+  color: #2680EB;
 }
 
 .wrapper-img-cont {

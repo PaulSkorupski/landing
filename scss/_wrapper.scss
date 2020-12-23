@@ -22,6 +22,28 @@
     text-decoration: underline;
     text-decoration-color: #005eff79;
     color: $cl-react;
+    font-weight: 700;
+}
+
+.wrapper-text-sub {
+    color: $cl-600;
+    font-size: 1.6rem;
+    max-width: 450px;
+}
+
+.button-cont {
+    margin-top: 40px
+}
+
+.wrapper-more {
+    @include button;
+    margin-right: 15px;
+}
+
+.wrapper-contact {
+    @include button;
+    background: none;
+    color: $cl-blue;
 }
 
 //

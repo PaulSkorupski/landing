@@ -1,0 +1,8 @@
+@mixin button {
+    background-color: $cl-blue;
+    text-align: center;
+    padding: 13px;
+    text-decoration: none;
+    color: $cl-100;
+    font-weight: 500;
+}
