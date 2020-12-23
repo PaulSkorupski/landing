@@ -1,8 +1,10 @@
 @import 'normalize';
 @import 'globals';
+@import 'nav';
 
 body {
     background-color: $bg-main;
+    font-family: $ff-main;
 }
 
 .container {

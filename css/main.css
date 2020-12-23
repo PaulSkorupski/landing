@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -344,8 +345,63 @@ template {
 ===*/
 /*1.Color schemes*/
 /*2.Typography*/
+.nav-cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 65px;
+  width: 100%;
+}
+
+.nav-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 92%;
+  height: 60%;
+}
+
+.nav-logo-cont {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.nav-logo {
+  width: 25px;
+  height: 25px;
+  border: 3.5px solid #8B94A7;
+  margin-right: 8px;
+}
+
+.nav-logo-font {
+  color: #649DFF;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.blank {
+  flex: 2.5;
+}
+
+.nav-links-cont {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  margin-left: 20px;
+  text-align: center;
+  color: #6E707F;
+  font-weight: 400;
+  text-decoration: none;
+}
+
 body {
   background-color: #fff;
+  font-family: "Roboto", sans-serif;
 }
 
 .container {
