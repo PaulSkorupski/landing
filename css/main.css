@@ -372,7 +372,7 @@ template {
   width: 25px;
   height: 25px;
   border: 3.5px solid #8B94A7;
-  margin-right: 8px;
+  margin-right: 10px;
 }
 
 .nav-logo-font {
@@ -397,6 +397,36 @@ template {
   color: #6E707F;
   font-weight: 400;
   text-decoration: none;
+}
+
+.wrapper-cont {
+  margin: 20px auto 0 auto;
+  height: 450px;
+  display: flex;
+  flex-direction: row;
+  width: 85%;
+}
+
+.wrapper-text-cont {
+  flex: 1;
+}
+
+.wrapper-text-heading {
+  margin-top: 100px;
+  color: #40435D;
+  font-weight: 500;
+  font-size: 3rem;
+  line-height: 0.35;
+}
+
+.wrapper-text-heading span {
+  text-decoration: underline;
+  text-decoration-color: #005eff79;
+  color: #005DFF;
+}
+
+.wrapper-img-cont {
+  flex: 1;
 }
 
 body {

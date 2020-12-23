@@ -1,0 +1,30 @@
+.wrapper-cont {
+    margin: 20px auto 0 auto;
+    height: 450px;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+}
+
+.wrapper-text-cont {
+    flex: 1;
+}
+
+.wrapper-text-heading {
+    margin-top: 100px;
+    color: $cl-400;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 0.35;
+}
+
+.wrapper-text-heading span {
+    text-decoration: underline;
+    text-decoration-color: #005eff79;
+    color: $cl-react;
+}
+
+//
+.wrapper-img-cont {
+    flex: 1;
+}
