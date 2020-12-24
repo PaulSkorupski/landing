@@ -631,6 +631,59 @@ Popping
   animation-delay: 0.1s;
 }
 
+.about-cont {
+  margin-top: 300px;
+}
+
+/*===
+skills
+===*/
+.about-skills {
+  height: 620px;
+  background: #2680EB;
+  background: url(../img/skillsdecor.svg) no-repeat right;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flexalign {
+  width: 75%;
+  height: 75%;
+  display: flex;
+  flex-direction: column;
+}
+
+.skills-content-cont {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.skills-content-main-cont {
+  flex: 1;
+}
+
+.skills-up-left {
+  border-right: 1.5px solid #AEAEAE;
+  border-bottom: 1.5px solid #AEAEAE;
+}
+
+.skills-up-right {
+  border-left: 1.5px solid #AEAEAE;
+  border-bottom: 1.5px solid #AEAEAE;
+}
+
+.skills-down-left {
+  border-right: 1.5px solid #AEAEAE;
+  border-top: 1.5px solid #AEAEAE;
+}
+
+.skills-down-right {
+  border-left: 1.5px solid #AEAEAE;
+  border-top: 1.5px solid #AEAEAE;
+}
+
 :root {
   scroll-behavior: smooth;
 }
