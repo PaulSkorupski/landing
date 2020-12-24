@@ -6,3 +6,10 @@
     color: $cl-100;
     font-weight: 500;
 }
+
+@mixin animation {
+    animation-duration: 1s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}

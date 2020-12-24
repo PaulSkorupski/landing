@@ -350,7 +350,7 @@ template {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 65px;
+  height: 70px;
   width: 100%;
 }
 
@@ -401,7 +401,6 @@ template {
 
 .wrapper-cont {
   margin: 20px auto 0 auto;
-  height: 450px;
   display: flex;
   flex-direction: row;
   width: 85%;
@@ -421,8 +420,8 @@ template {
 
 .wrapper-text-heading span {
   text-decoration: underline;
-  text-decoration-color: #005eff79;
-  color: #005DFF;
+  text-decoration-color: #36922e85;
+  color: #32af27;
   font-weight: 700;
 }
 
@@ -466,9 +465,180 @@ template {
   margin-top: 50px;
 }
 
+/*===
+g1 - wires
+g2 - server
+g3,g4 - phone
+g5 - laptop
+===*/
+/*keyframes*/
+@keyframes wire-pulse {
+  from {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+@keyframes server-dial {
+  from {
+    fill: #81a4fc;
+  }
+  to {
+    fill: aquamarine;
+  }
+}
+@keyframes server-dial2 {
+  from {
+    fill: #81a4fc;
+  }
+  to {
+    fill: #c1ffec;
+  }
+}
+@keyframes phone-mark {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.5;
+  }
+}
+@keyframes phone-screen {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 0.1;
+  }
+}
+.wrapper-server-dial, .wrapper-server-dial2 {
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: server-dial;
+}
+
+.wrapper-server-dial3 {
+  animation-name: server-dial2;
+  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.wrapper-server-rdial {
+  animation-name: server-dial;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.phone-mark {
+  animation-name: phone-mark;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.wrapper-phone-screen {
+  animation-name: phone-screen;
+  animation-duration: 2s;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+/*===
+Popping
+===*/
+@keyframes popin-1 {
+  from {
+    transform: translate(0, -300px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+@keyframes popin-2 {
+  from {
+    transform: translate(0, 300px);
+    opacity: 0;
+  }
+  to {
+    transform: translate(0);
+    opacity: 1;
+  }
+}
+.wrapper-svg-g1 {
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: wire-pulse, popin-2;
+  animation-iteration-count: infinite, 1;
+  animation-delay: 0, 0.1s;
+  animation-duration: 0.5s, 1s;
+}
+
+.wrapper-svg-g2 {
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: popin-1;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+  animation-duration: 1.6s;
+}
+
+.wrapper-svg-g3 {
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: popin-1;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+  animation-duration: 1.4s;
+}
+
+.wrapper-svg-g4 {
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: popin-1;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+  animation-duration: 0.5s;
+}
+
+.wrapper-svg-g5 {
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-name: popin-1;
+  animation-iteration-count: 1;
+  animation-delay: 0.1s;
+}
+
+:root {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #fff;
   font-family: "Roboto", sans-serif;
+  user-select: none;
 }
 
 .container {

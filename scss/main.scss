@@ -5,10 +5,14 @@
 @import 'wrapper';
 @import 'wrapper-svg';
 
+:root {
+    scroll-behavior: smooth;
+}
 
 body {
     background-color: $bg-main;
     font-family: $ff-main;
+    user-select: none;
 }
 
 .container {

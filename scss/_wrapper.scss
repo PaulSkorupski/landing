@@ -1,6 +1,5 @@
 .wrapper-cont {
     margin: 20px auto 0 auto;
-    height: 450px;
     display: flex;
     flex-direction: row;
     width: 85%;
@@ -20,8 +19,8 @@
 
 .wrapper-text-heading span {
     text-decoration: underline;
-    text-decoration-color: #005eff79;
-    color: $cl-react;
+    text-decoration-color: #36922e85;
+    color: $cl-node;
     font-weight: 700;
 }
 
