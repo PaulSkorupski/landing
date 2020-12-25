@@ -1,5 +1,5 @@
 .about-cont {
-    margin-top: 300px;
+    margin-top: 400px;
 }
 
 /*===
@@ -10,13 +10,14 @@ skills
     //del this
     height: 620px;
     //
-    background: $bg-accent;
-    background: url(../img/skillsdecor.svg) no-repeat right #f1f1f1;
+    // background: $bg-accent;
+    // background: url(../img/skillsdecor.svg) no-repeat right #fff;
     background-size: 30%, 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
 .flexalign {
@@ -86,7 +87,7 @@ skills
     border-radius: 3px;
     padding: 0 15px;
     height: 36px;
-    background-color: #f1f1f1;
+    background-color: #fff;
 
     //temp
 }
