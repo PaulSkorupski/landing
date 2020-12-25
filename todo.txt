@@ -1,2 +1,3 @@
 ikona karty
 //grafika benneru (izometryczna)
+ikony skilli
