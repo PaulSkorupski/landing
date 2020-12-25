@@ -11,7 +11,7 @@ skills
     height: 620px;
     //
     background: $bg-accent;
-    background: url(../img/skillsdecor.svg) no-repeat right;
+    background: url(../img/skillsdecor.svg) no-repeat right #f1f1f1;
     background-size: 30%, 100%;
 
     display: flex;
@@ -86,7 +86,7 @@ skills
     border-radius: 3px;
     padding: 0 15px;
     height: 36px;
-    background-color: #fff;
+    background-color: #f1f1f1;
 
     //temp
 }
