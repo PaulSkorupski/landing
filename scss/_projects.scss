@@ -1,0 +1,38 @@
+.about-projects-cont {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+
+.project-cont {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    border-top: 1.5px solid $cl-200;
+    border-bottom: 1.5px solid $cl-200;
+}
+
+.project {
+    height: 325px;
+    width: 275px;
+    margin: 75px 10px;
+    border: 1.5px solid $cl-200;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 0 20px #00000011;
+    background: url(../img/placeholder3.svg) no-repeat, url(../img/placeholder4.svg) no-repeat;
+    background-size: 100% 40%, 100% 50%;
+    background-position: 0 50%, 0 35%;
+    transition: all 0.2s ease;
+}
+
+.project:hover {
+    background-size: 100% 45%, 100% 50%;
+    box-shadow: 0 0 20px #00000042;
+}
+
+.project-title {
+    margin-top: 100%;
+    color: $cl-400;
+}
