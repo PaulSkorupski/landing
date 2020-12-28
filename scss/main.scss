@@ -1,0 +1,25 @@
+@import 'normalize';
+@import 'globals';
+@import 'mixins';
+@import 'nav';
+@import 'wrapper';
+@import 'wrapper-svg';
+@import 'content';
+@import 'about';
+@import 'projects';
+@import 'contact';
+
+:root {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $bg-main;
+    font-family: $ff-main;
+    user-select: none;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}

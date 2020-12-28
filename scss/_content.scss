@@ -1,0 +1,177 @@
+.about-cont {
+    margin-top: 400px;
+    position: relative;
+}
+
+/*===
+skills
+===*/
+
+.about-skills {
+    //del this
+    height: 620px;
+    //
+    // background: $bg-accent;
+    // background: url(../img/skillsdecor.svg) no-repeat right #fff;
+    background-size: 30%, 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.flexalign {
+    width: 75%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+}
+
+.skills-content-cont {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+}
+
+.skills-content-main-cont {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    color: $cl-350;
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.skills-up-left {
+    border-right: 1.5px solid $cl-divider;
+    border-bottom: 1.5px solid $cl-divider;
+}
+
+.skills-up-right {
+    border-left: 1.5px solid $cl-divider;
+    border-bottom: 1.5px solid $cl-divider;
+}
+
+.skills-down-left {
+    border-right: 1.5px solid $cl-divider;
+    border-top: 1.5px solid $cl-divider;
+}
+
+.skills-down-right {
+    border-left: 1.5px solid $cl-divider;
+    border-top: 1.5px solid $cl-divider;
+}
+
+.skills-heading {
+    margin-left: 40px;
+    margin-bottom: 30px;
+}
+
+/*===
+skills
+===*/
+
+.skills-badges-cont {
+    margin-left: 40px;
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.badge-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 18px;
+    margin-bottom: 14px;
+    font-size: 1rem;
+    padding: 0 15px;
+    height: 36px;
+    background-color: #fff;
+
+    //temp
+}
+
+.html {
+    border: 1.5px solid #FF3A00;
+}
+
+.css {
+    border: 1.5px solid #0F6DCB;
+}
+
+.js {
+    border: 1.5px solid #FFD500;
+}
+
+.git {
+    border: 1.5px solid #31D500;
+}
+
+.sass {
+    border: 1.5px solid #E47272;
+}
+
+.node {
+    border: 1.5px solid #24A410;
+}
+
+.react {
+    border: 1.5px solid #0db9cf;
+}
+
+.express {
+    border: 1.5px solid #afafaf;
+}
+
+.mongodb {
+    border: 1.5px solid #30cc18;
+}
+
+.python {
+    border: 1.5px solid #105786;
+}
+
+.ion {
+    border: 1.5px solid #2e9ae2;
+}
+
+.docker {
+    border: 1.5px solid #1ea3fc;
+}
+
+.rnative {
+    border: 1.5px solid #0db9cf;
+}
+
+.babel {
+    border: 1.5px solid #d6da05;
+}
+
+.rest {
+    border: 1.5px solid #880888;
+}
+
+.tscript {
+    border: 1.5px solid #0443b8;
+}
+
+.axd {
+    border: 1.5px solid #8b0960;
+}
+
+.psc {
+    border: 1.5px solid #271e74;
+}
+
+.ils {
+    border: 1.5px solid #cebc17;
+}
+
+.github {
+    border: 1.5px solid #bbbbbb;
+}
+
+.vscode {
+    border: 1.5px solid #047beb;
+}

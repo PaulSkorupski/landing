@@ -1,0 +1,137 @@
+.wrapper-svg-main {
+    transform: scale(1.25);
+    margin-top: 50px;
+}
+
+/*===
+g1 - wires
+g2 - server
+g3,g4 - phone
+g5 - laptop
+===*/
+
+/*keyframes*/
+@keyframes wire-pulse {
+    from{opacity: 1;}
+    100%{opacity: 0.3;}
+}
+
+@keyframes server-dial {
+    from{fill: #81a4fc;}
+    to{fill: aquamarine;}
+}
+
+@keyframes server-dial2 {
+    from{fill: #81a4fc;}
+    to{fill: #c1ffec;}
+}
+
+@keyframes phone-mark {
+    from{opacity: 1;}
+    to{opacity: 0.5;}
+}
+
+@keyframes phone-screen {
+    from{opacity: 0.2;}
+    to{opacity: 0.1;}
+}
+
+//animations
+// .wrapper-svg-g1 {
+//     @include animation;
+//     animation-name: wire-pulse;
+// }
+
+.wrapper-server-dial, .wrapper-server-dial2 {
+    @include animation;
+    animation-name: server-dial;
+}
+
+.wrapper-server-dial3 {
+    animation-name: server-dial2;
+    animation-duration: 2s;
+    @include animation;
+}
+
+.wrapper-server-rdial {
+    animation-name: server-dial;
+    @include animation;
+}
+
+.phone-mark {
+    animation-name: phone-mark;
+    @include animation;
+}
+
+.wrapper-phone-screen {
+    animation-name: phone-screen;
+    animation-duration: 2s;
+    @include animation;
+}
+
+/*===
+Popping
+===*/
+
+//keyframes
+@keyframes popin-1{
+    from {
+        transform: translate(0, -300px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+@keyframes popin-2{
+    from {
+        transform: translate(0, 300px);
+        opacity: 0;
+    }
+    to {
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+//animations
+.wrapper-svg-g1 {
+    @include animation;
+    animation-name: wire-pulse, popin-2;
+    animation-iteration-count: infinite, 1;
+    animation-delay: 0, 0.1s;
+    animation-duration: 0.5s, 1s;
+}
+
+.wrapper-svg-g2 {
+    @include animation;
+    animation-name: popin-1;
+    animation-iteration-count: 1;
+    animation-delay: 0.1s;
+    animation-duration: 1.6s
+}
+
+.wrapper-svg-g3 {
+    @include animation;
+    animation-name: popin-1;
+    animation-iteration-count: 1;
+    animation-delay: 0.1s;
+    animation-duration: 1.4s
+}
+
+.wrapper-svg-g4 {
+    @include animation;
+    animation-name: popin-1;
+    animation-iteration-count: 1;
+    animation-delay: 0.1s;
+    animation-duration: 0.5s
+}
+
+.wrapper-svg-g5 {
+    @include animation;
+    animation-name: popin-1;
+    animation-iteration-count: 1;
+    animation-delay: 0.1s;
+}

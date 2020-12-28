@@ -1,0 +1,51 @@
+.wrapper-cont {
+    margin: 20px auto 0 auto;
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+}
+
+.wrapper-text-cont {
+    flex: 1;
+}
+
+.wrapper-text-heading {
+    margin-top: 100px;
+    color: $cl-400;
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 0.35;
+}
+
+.wrapper-text-heading span {
+    text-decoration: underline;
+    text-decoration-color: #36922e85;
+    color: $cl-node;
+    font-weight: 700;
+}
+
+.wrapper-text-sub {
+    color: $cl-600;
+    font-size: 1.6rem;
+    max-width: 450px;
+}
+
+.button-cont {
+    margin-top: 40px
+}
+
+.wrapper-more {
+    @include button;
+    margin-right: 15px;
+}
+
+.wrapper-contact {
+    @include button;
+    background: none;
+    color: $cl-blue;
+}
+
+//
+.wrapper-img-cont {
+    flex: 1;
+}
