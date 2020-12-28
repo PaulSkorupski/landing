@@ -1,0 +1,87 @@
+.contact-cont {
+    // height: 600px; //temp
+    background: $cl-blue;
+    background: url(../img/skillsdecor.svg) no-repeat right #fff;
+    background-size: 30%, 100%;
+}
+
+.flex-align-contact {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+.contact-inp {
+    width: 60%;
+    padding: 8px;
+    border: 1.5px solid $border-inp;
+    background-color: transparent;
+}
+
+.contact-textarea {
+    padding: 8px;
+    border: 1.5px solid $border-inp;
+}
+
+.form-item {
+    margin-bottom: 25px;
+    border-radius: 2px;
+}
+
+.form-item:focus {
+    border: 1.5px solid $cl-blue;
+    outline: none;
+}
+
+.contact-form-buttons {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.contact-send {
+    @include button;
+    padding: 10px 30px;
+    border: none;
+}
+
+.contact-reset {
+    @include button;
+    padding: 10px 30px;
+    border: none;
+    background-color: #fff;
+    color: $cl-blue;
+}
+
+.contact-send:focus, .contact-reset:focus {
+    outline: none;
+}
+
+.form-item-cont {
+    position: relative;
+    width: 100%;
+}
+
+
+// //labels
+// .label-name {
+//     @include label(30%, 10px)
+// }
+
+// .label-email {
+//     @include label(30%, 10px)
+// }
+
+// .label-msg {
+//     @include label(8%, 10px)
+// }
+
+// .contact-inp:focus .label-name {
+//     top: 10%;
+// }

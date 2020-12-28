@@ -5,6 +5,9 @@
     text-decoration: none;
     color: $cl-100;
     font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+    border: none;
 }
 
 @mixin animation {
@@ -12,4 +15,14 @@
     animation-delay: 0s;
     animation-iteration-count: infinite;
     animation-direction: alternate;
+}
+
+@mixin label($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    transform: translate(0, -50%);
+    pointer-events: none;
+    color: $border-inp;
+    font-size: 0.9rem;
 }

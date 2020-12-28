@@ -442,6 +442,9 @@ template {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
   margin-right: 15px;
 }
 
@@ -452,6 +455,9 @@ template {
   text-decoration: none;
   color: #fff;
   font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
   background: none;
   color: #2680EB;
 }
@@ -898,6 +904,91 @@ skills
 .project-title {
   margin-top: 100%;
   color: #40435D;
+}
+
+.contact-cont {
+  background: #2680EB;
+  background: url(../img/skillsdecor.svg) no-repeat right #fff;
+  background-size: 30%, 100%;
+}
+
+.flex-align-contact {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  width: 85%;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+}
+
+.contact-inp {
+  width: 60%;
+  padding: 8px;
+  border: 1.5px solid #949494;
+  background-color: transparent;
+}
+
+.contact-textarea {
+  padding: 8px;
+  border: 1.5px solid #949494;
+}
+
+.form-item {
+  margin-bottom: 25px;
+  border-radius: 2px;
+}
+
+.form-item:focus {
+  border: 1.5px solid #2680EB;
+  outline: none;
+}
+
+.contact-form-buttons {
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.contact-send {
+  background-color: #2680EB;
+  text-align: center;
+  padding: 13px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 30px;
+  border: none;
+}
+
+.contact-reset {
+  background-color: #2680EB;
+  text-align: center;
+  padding: 13px;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 3px;
+  cursor: pointer;
+  border: none;
+  padding: 10px 30px;
+  border: none;
+  background-color: #fff;
+  color: #2680EB;
+}
+
+.contact-send:focus, .contact-reset:focus {
+  outline: none;
+}
+
+.form-item-cont {
+  position: relative;
+  width: 100%;
 }
 
 :root {

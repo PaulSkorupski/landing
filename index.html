@@ -269,7 +269,31 @@
                 </div>
             </div>
         </div>
-        <div class="contact-cont"></div>
+        <div class="contact-cont">
+            <div class="flex-align-contact">
+                <div class="about-heading">
+                    <p>Kontakt</p>
+                </div>
+                <form class="contact-form" action="mailto:oxyaego98@gmail.com" method="post" enctype="text/plain">
+                    <div class="form-item-cont">
+                        <input class="contact-inp form-item" type="text" name="name">
+                        <label class="label-name __label" for="name">Imie</label>
+                    </div>
+                    <div class="form-item-cont">
+                        <input class="contact-inp form-item" type="email" name="mail">
+                        <label class="label-email __label" for="email">Email</label>
+                    </div>
+                    <div class="form-item-cont">
+                        <textarea class="contact-textarea form-item" name="message" cols="50" rows="10" style="resize: vertical;"></textarea>
+                        <label class="label-msg __label" for="message">Wiadomość</label>
+                    </div>
+                    <div class="form-item contact-form-buttons">
+                        <input class="contact-send" type="submit" value="Wyślij">
+                        <input class="contact-reset" type="reset" value="Wyczyść">
+                    </div>
+                </form>
+            </div>
+        </div>
         <div class="footer"></div>
     </div>
 </body>
