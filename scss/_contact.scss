@@ -47,6 +47,7 @@
 
 .contact-send {
     @include button;
+    cursor: not-allowed;
     padding: 10px 30px;
     border: none;
 }
@@ -70,18 +71,61 @@
 
 
 // //labels
-// .label-name {
-//     @include label(30%, 10px)
-// }
+.label-name {
+    @include label(17.5px, 10px)
+}
 
-// .label-email {
-//     @include label(30%, 10px)
-// }
+.label-email {
+    @include label(17.5px, 10px)
+}
 
-// .label-msg {
-//     @include label(8%, 10px)
-// }
+.label-msg {
+    @include label(16px, 10px)
+}
 
-// .contact-inp:focus .label-name {
-//     top: 10%;
-// }
+.contact-inp:focus + .label-name {
+    top: 0;
+    color: $cl-blue;
+}
+
+.contact-inp:focus + .label-email {
+    top: 0;
+    color: $cl-blue;
+}
+
+.contact-textarea:focus + .label-msg {
+    top: 0;
+    color: $cl-blue;
+}
+
+.contact-inp:not(:placeholder-shown).contact-inp:not(:focus) + .label-name {
+    top: 0;
+}
+
+.contact-inp:not(:placeholder-shown).contact-inp:not(:focus) + .label-email {
+    top: 0;
+}
+.contact-textarea:not(:placeholder-shown).contact-textarea:not(:focus) + .label-msg {
+    top: 0;
+}
+
+.contact-inp::placeholder, .contact-textarea::placeholder {
+    color: transparent;
+}
+
+.contact-form-buttons {
+    position: relative;
+}
+
+.warning {
+    visibility: hidden;
+    position: absolute;
+    top: 30px;
+    display: flex;
+    color: red;
+    pointer-events: none;
+}
+
+.contact-send:hover + .warning {
+    visibility: visible;
+}

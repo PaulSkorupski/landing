@@ -962,6 +962,7 @@ skills
   border-radius: 3px;
   cursor: pointer;
   border: none;
+  cursor: not-allowed;
   padding: 10px 30px;
   border: none;
 }
@@ -989,6 +990,93 @@ skills
 .form-item-cont {
   position: relative;
   width: 100%;
+}
+
+.label-name {
+  position: absolute;
+  top: 17.5px;
+  left: 10px;
+  transform: translate(0, -50%);
+  pointer-events: none;
+  color: #949494;
+  font-size: 0.9rem;
+  background-color: #fff;
+  padding: 0 3px;
+  transition: all 0.1s ease;
+}
+
+.label-email {
+  position: absolute;
+  top: 17.5px;
+  left: 10px;
+  transform: translate(0, -50%);
+  pointer-events: none;
+  color: #949494;
+  font-size: 0.9rem;
+  background-color: #fff;
+  padding: 0 3px;
+  transition: all 0.1s ease;
+}
+
+.label-msg {
+  position: absolute;
+  top: 16px;
+  left: 10px;
+  transform: translate(0, -50%);
+  pointer-events: none;
+  color: #949494;
+  font-size: 0.9rem;
+  background-color: #fff;
+  padding: 0 3px;
+  transition: all 0.1s ease;
+}
+
+.contact-inp:focus + .label-name {
+  top: 0;
+  color: #2680EB;
+}
+
+.contact-inp:focus + .label-email {
+  top: 0;
+  color: #2680EB;
+}
+
+.contact-textarea:focus + .label-msg {
+  top: 0;
+  color: #2680EB;
+}
+
+.contact-inp:not(:placeholder-shown).contact-inp:not(:focus) + .label-name {
+  top: 0;
+}
+
+.contact-inp:not(:placeholder-shown).contact-inp:not(:focus) + .label-email {
+  top: 0;
+}
+
+.contact-textarea:not(:placeholder-shown).contact-textarea:not(:focus) + .label-msg {
+  top: 0;
+}
+
+.contact-inp::placeholder, .contact-textarea::placeholder {
+  color: transparent;
+}
+
+.contact-form-buttons {
+  position: relative;
+}
+
+.warning {
+  visibility: hidden;
+  position: absolute;
+  top: 30px;
+  display: flex;
+  color: red;
+  pointer-events: none;
+}
+
+.contact-send:hover + .warning {
+  visibility: visible;
 }
 
 :root {
