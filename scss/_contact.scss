@@ -47,6 +47,7 @@
 
 .contact-send {
     @include button;
+    background-color: #8dc1ff;
     cursor: not-allowed;
     padding: 10px 30px;
     border: none;
