@@ -1,0 +1,148 @@
+/*
+==============
+1.Mobile(small)
+2.Laptop(medium)
+3.Desktop(large)
+==============
+*/
+
+
+/*1.Mobile(small)*/
+@media (min-width: 0px) {
+    //nav
+    .nav-cont {
+        height: 70px;
+    }
+    .nav-content {
+        height: 80%;
+    }
+    .nav-logo {
+        margin-right: 0px;
+    }
+    .nav-logo-cont {
+        flex: 0.5;
+    }
+    .nav-logo-font {
+        display: none;
+    }
+    .blank {
+        display: none;
+    }
+    .nav-links-cont {
+        flex: 3;
+    }
+    .nav-link {
+        margin-left: 0;
+        font-size: 0.85rem;
+        flex: 1;
+    }
+    //wrapper
+    .wrapper-cont {
+        margin: 10px auto 0 auto;
+    }
+    .wrapper-text-cont {
+        width: 100%;
+    }
+    .wrapper-text-heading {
+        margin: auto;
+        margin-top: 0;
+        line-height: 1;
+        font-size: 2rem;
+    }
+    .wrapper-text-heading p {
+        margin: 5px 0;
+    }
+    .wrapper-img-cont {
+        display: none;
+    }
+    .button-cont {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .wrapper-more, .wrapper-contact {
+        flex: 1;
+        margin-right: 0;
+    }
+    //main
+    .about-cont {
+        margin-top: 300px;
+    }
+    .flex-align-about {
+        width: 100%;
+    }
+    .about-heading {
+        font-size: 2.5rem;
+        text-align: center;
+    }
+    .about {
+        border-left: none;
+    }
+    .about-decor {
+        height: 100%;
+    }
+    .about-skills {
+        margin-top: 20px;
+        margin-bottom: 80px;
+        height: unset;
+    }
+    .flexalign {
+        width: 100%;
+    }
+    .skills-content-cont {
+        flex-direction: column;
+    }
+    .skills-content-main-cont {
+        border-left: none;
+        border-right: none;
+        border-top: none;
+        border-bottom: 1.5px solid #e2e2e2;
+    }
+    .project-cont {
+        flex-direction: column;
+    }
+    .about-projects-cont {
+        margin-bottom: 80px;
+    }
+    .project {
+        margin: 35px 10px;
+    }
+    .flex-align-contact {
+        width: 100%;
+    }
+    .contact-form {
+        width: 100%;
+        align-items: center;
+    }
+    .form-item-cont {
+        display: flex;
+        justify-content: center;
+    }
+    .contact-inp {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-textarea {
+        width: 80%;
+    }
+    .__label {
+        left: 32px;
+    }
+    .contact-form-buttons {
+        flex-direction: column;
+        width: 85%;
+    }
+    .warning {
+        top: -38px;
+    }
+    //footer
+    .footer {
+        margin-top: 100px;
+        height: 450px;
+    }
+    .footer-panel-shortcuts {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+/*2.*/

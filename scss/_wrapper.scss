@@ -31,7 +31,9 @@
 }
 
 .button-cont {
-    margin-top: 40px
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
 }
 
 .wrapper-more {
