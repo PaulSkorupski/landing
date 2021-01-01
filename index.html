@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-    <div class="container">
+    <div id="top" class="container">
         <div class="nav-cont">
             <div class="nav-content">
                 <div class="nav-logo-cont">
@@ -16,9 +16,9 @@
                 </div>
                 <div class="blank"></div>
                 <div class="nav-links-cont">
-                    <a href="" class="nav-link">O mnie</a>
-                    <a href="" class="nav-link">Moje Projekty</a>
-                    <a href="" class="nav-link">Kontakt</a>
+                    <a href="#about" class="nav-link">O mnie</a>
+                    <a href="#projects" class="nav-link">Moje Projekty</a>
+                    <a href="#cont" class="nav-link">Kontakt</a>
                 </div>
             </div>
         </div>
@@ -130,12 +130,12 @@
         </div>
         <div class="main-cont">
             <div class="about-cont">
-                <div class="about-decor"></div>
+                <div id="about" class="about-decor"></div>
                 <div class="flex-align-about">
-                    <div class="about-heading">
+                    <div class="about-heading anime-heading-1" style="opacity: 0; transform: translateY(50px)">
                         <p>Kilka słów <span>o mnie.</span></p>
                     </div>
-                    <div class="about">
+                    <div class="about anime-card-1" style="opacity: 0; transform: translateY(50px)">
                         <div class="about-main-cont">
                             <p class="about-main-heading">Kim jestem?</p>
                             <p class="about-text">
@@ -143,7 +143,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="about">
+                    <div class="about anime-card-2" style="opacity: 0; transform: translateY(50px)">
                         <div class="about-main-cont">
                             <p class="about-main-heading">Dlaczego sieć?</p>
                             <p class="about-text">
@@ -151,7 +151,7 @@
                             </p>
                         </div>
                     </div>
-                    <div class="about">
+                    <div class="about anime-card-3" style="opacity: 0; transform: translateY(50px);">
                         <div class="about-main-cont">
                             <p class="about-main-heading">Czemu właśnie ja?</p>
                             <p class="about-text">Nienawidzę niedociągnięć oraz pół rozwiązań. Jeśli zostanie mi powierzone zadanie, musi ono zostać wykonane perfekcyjnie. Kieruję się zasadą "jakość ponad ilość", zawsze staram się zostawić po sobie dobre wrażenie. Poza tym rozwijam umiejętności niezbędne dla developera w obecnych czasach. Potrafię efektywnie szukać informacji, myśleć nie szablonowo, czytać dokumentacje techniczną, pracować w zespole, prosić o pomoc w razie potrzeby i wiele więcej.</p>
@@ -159,8 +159,8 @@
                     </div>
                 </div>
             </div>
-            <div class="about-skills">
-                <div class="flexalign">
+            <div id="skills" class="about-skills">
+                <div class="flexalign anime-skills" style="opacity: 0;">
                     <div class="skills-content-cont">
                         <div class="skills-content-main-cont skills-up-left">
                             <p class="skills-heading">Technologie których używam</p>
@@ -250,7 +250,7 @@
                     </div>
                 </div>
             </div>
-            <div class="about-projects-cont">
+            <div id="projects" class="about-projects-cont anime-projects" style="opacity: 0;">
                 <div class="flex-align-about">
                     <div class="about-heading">
                         <p>Projekty</p>
@@ -270,31 +270,50 @@
             </div>
         </div>
         <div class="contact-cont">
+            <div id="cont"></div>
             <div class="flex-align-contact">
                 <div class="about-heading">
                     <p>Kontakt</p>
                 </div>
-                <form class="contact-form" action="mailto:oxyaego98@gmail.com" method="post" enctype="text/plain">
+                <form class="contact-form" action="" method="post" enctype="text/plain">
                     <div class="form-item-cont">
-                        <input class="contact-inp form-item" type="text" name="name">
+                        <input class="contact-inp form-item" type="text" name="name" placeholder="#">
                         <label class="label-name __label" for="name">Imie</label>
                     </div>
                     <div class="form-item-cont">
-                        <input class="contact-inp form-item" type="email" name="mail">
+                        <input class="contact-inp form-item" type="email" name="mail" placeholder="#">
                         <label class="label-email __label" for="email">Email</label>
                     </div>
                     <div class="form-item-cont">
-                        <textarea class="contact-textarea form-item" name="message" cols="50" rows="10" style="resize: vertical;"></textarea>
+                        <textarea class="contact-textarea form-item" name="message" cols="50" rows="10" style="resize: vertical;" placeholder="#"></textarea>
                         <label class="label-msg __label" for="message">Wiadomość</label>
                     </div>
                     <div class="form-item contact-form-buttons">
                         <input class="contact-send" type="submit" value="Wyślij">
+                        <div class="warning">
+                            <p class="warning-msg">Ta funkcja na razie nie działa.</p>
+                        </div>
                         <input class="contact-reset" type="reset" value="Wyczyść">
                     </div>
                 </form>
             </div>
         </div>
-        <div class="footer"></div>
+        <div class="footer">
+            <div class="footer-split">
+                <div class="footer-panel-shortcuts">
+                    <a href="#top" class="footer-shortcut">Na górę</a>
+                    <a href="#about" class="footer-shortcut">O mnie</a>
+                    <a href="#skills" class="footer-shortcut">Umiejętności</a>
+                    <a href="#projects" class="footer-shortcut">Inne projekty</a>
+                    <a href="#cont" class="footer-shortcut">Kontakt</a>
+                </div>
+                <div class="footer-panel-divider"></div>
+                <div class="footer-panel-copyright">© 2021 TlenDev</div>
+            </div>
+        </div>
     </div>
+    <script src="./js/nav.js"></script>
+    <script src="lib/anime.min.js"></script>
+    <script src="./js/animations.js"></script>
 </body>
 </html>
