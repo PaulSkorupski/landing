@@ -1212,11 +1212,15 @@ skills
     margin: auto;
     margin-top: 0;
     line-height: 1;
-    font-size: 2rem;
+    font-size: 2.7rem;
   }
 
   .wrapper-text-heading p {
     margin: 5px 0;
+  }
+
+  .wrapper-text-sub {
+    margin: 45px 0;
   }
 
   .wrapper-img-cont {
@@ -1234,7 +1238,7 @@ skills
   }
 
   .about-cont {
-    margin-top: 300px;
+    margin-top: 200px;
   }
 
   .flex-align-about {
@@ -1244,6 +1248,7 @@ skills
   .about-heading {
     font-size: 2.5rem;
     text-align: center;
+    margin: 45px 0;
   }
 
   .about {
@@ -1252,11 +1257,11 @@ skills
 
   .about-decor {
     height: 100%;
+    top: -50px;
   }
 
   .about-skills {
     margin-top: 20px;
-    margin-bottom: 80px;
     height: unset;
   }
 
@@ -1280,7 +1285,7 @@ skills
   }
 
   .about-projects-cont {
-    margin-bottom: 80px;
+    margin-bottom: 0;
   }
 
   .project {
@@ -1307,12 +1312,16 @@ skills
     margin-right: auto;
   }
 
+  .button {
+    margin-bottom: 10px;
+  }
+
   .contact-textarea {
     width: 80%;
   }
 
   .__label {
-    left: 32px;
+    left: 10%;
   }
 
   .contact-form-buttons {
