@@ -48,6 +48,7 @@ document.addEventListener('scroll', () => {
             opacity: 1,
             easing: 'linear',
             duration: 400,
+            delay: 200
         });
         skillsDone = true;
     }
@@ -58,6 +59,7 @@ document.addEventListener('scroll', () => {
             opacity: 1,
             easing: 'linear',
             duration: 200,
+            delay: 200
         });
         projectsDone = true;
     }
